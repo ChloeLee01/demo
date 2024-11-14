@@ -1,6 +1,7 @@
 import React from "react";
 import { MdMenuBook } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { navItems } from "./../../constants/data";
 
 const Header = () => {
   return (
@@ -18,23 +19,15 @@ const Header = () => {
 
           <div className="nav-bar flex items-center gap-10">
             <ul className="nav-bar-items flex items-center justify-center gap-8 text-md font-semibold">
-              <li>
-                <Link>Home</Link>
-              </li>
-              <li>
-                <Link>The Book</Link>
-              </li>
-              <li>
-                <Link>Author</Link>
-              </li>
-              <li>
-                <Link>Reviews</Link>
-              </li>
-              <li>
-                <Link>Contact</Link>
-              </li>
+              {navItems.map((item, idx) => (
+                <li>
+                  <Link key={idx} to={item.to}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
-            <button className="download-btn px-6 py-1 border-2 rounded-2xl  border-orange-300 text-orange-300 font-semibold hover:bg-orange-400">
+            <button className="download-btn px-6 py-1 border-2 rounded-2xl  border-orange-300 text-orange-300 font-semibold transform ease-in-out duration-150 hover:bg-red-400">
               Download
             </button>
           </div>

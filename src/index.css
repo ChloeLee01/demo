@@ -11,8 +11,10 @@
 
 body {
   font-family: "Kanit", sans-serif;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("./images/background.jpg");
+  
 }
-
+/* style={{ backgroundImage: `url(${background})` }} */
 .container {
   padding: 1.5rem;
   width: 100%;

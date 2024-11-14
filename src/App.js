@@ -1,18 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./components/common/common/Header";
+import Header from "./components/common/Header";
 import Home from "./components/Home";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 };
