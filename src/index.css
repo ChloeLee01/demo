@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&display=swap');
+
 /* Reset Style */
 * {
   margin: 0;
@@ -34,8 +36,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
-}
+  }
 
 .img-wrapper::after {
   content: "";
@@ -47,4 +48,11 @@ a {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.45);
   z-index: auto;
+}
+
+.book-text {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: gray;
 }

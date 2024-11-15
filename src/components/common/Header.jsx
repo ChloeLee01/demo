@@ -5,7 +5,7 @@ import { navItems } from "./../../constants/data";
 
 const Header = () => {
   return (
-    <nav className="sticky top-0 z-20 backdrop-grayscale">
+    <nav className="sticky top-0 z-20 backdrop-blur-3xl">
       <div className="container relative">
         <div className="nav-inside-wrapper flex items-center justify-between">
           <Link>
