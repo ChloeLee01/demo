@@ -36,10 +36,10 @@ export const testimonials = [
     text: "Please tell your friends about our website that we provide 100% free CSS templates for everyone. Thank you for using our templates.",
   },
   {
-    user: "Candy",
-    occupation: "VP, Design",
-    image: user3,
-    rating: "3.5",
-    text: "Please tell your friends about our website that we provide 100% free CSS templates for everyone. Thank you for using our templates.",
+    user: "Joshua",
+    occupation: "Engineer",
+    image: user4,
+    rating: "4.0",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, quia quas recusandae excepturi omnis officiis illum expedita delectus nobis ipsam harum quo rerum odit saepe optio ipsum ab corrupti? Cupiditate.",
   },
 ]
