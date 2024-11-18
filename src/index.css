@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&display=swap");
 
 /* Reset Style */
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Kanit", sans-serif; 
+  font-family: "Kanit", sans-serif;
 }
 
 .container {
@@ -32,11 +32,11 @@ a {
 }
 
 .img-wrapper {
-  background-image: url('./images/background.jpg');
+  background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  }
+}
 
 .img-wrapper::after {
   content: "";
@@ -62,13 +62,29 @@ a {
 }
 
 .book-nav-items {
-  border-color: lightsalmon;
+  border-color: #f0f9ff;
   border-width: 2px;
-  border-radius: 1.5rem;
-  background-color: lightsalmon;
-  padding: 8px 20px;
+  border-radius: 2rem;
+  background-color: #f0f9ff;
+  padding: 12px 20px;
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  color: gray;
+ 
+}
+
+.book-nav-items:hover {
+  border-color: lightsalmon;
+  border-width: 2px;
+  border-radius: 2rem;
+  background-color: lightsalmon;
+  padding: 12px 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
   color: white;
+  transition: all 0.3s;
+}
+
+.book-nav-items span {
+  font-weight: 400;
 }

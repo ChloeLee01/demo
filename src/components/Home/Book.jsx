@@ -12,7 +12,7 @@ const Book = () => {
           </div>
           <div className="des-box w-3/8 flex items-baseline pl-5">
             <div>
-              <p className="font-semibold text-xl text-amber-300">Modern & Creative</p>
+              <p className="font-semibold text-xl text-amber-300 tracking-widest">Modern & Creative</p>
               <p className="font-semibold text-[3rem]">About The Book</p>
               <p className="book-text leading-7">
                 Credit goes to <span className="text-red-600">FreePik</span> for
@@ -29,6 +29,10 @@ const Book = () => {
         </div>
       </div>
       <div className="container">
+        <div className="title">
+          <p className="text-amber-300 flex justify-center font-semibold text-xl tracking-widest">What's inside?</p>
+          <p className="font-semibold text-[3rem]">Prieview at glance</p>
+        </div>
         <div className="book-wrapper flex">
           <BookNav/>
           <InsideBook/>
